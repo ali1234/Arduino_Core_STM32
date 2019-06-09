@@ -10,6 +10,30 @@ menu.opt=Optimize
 menu.rtlib=C Runtime Library
 menu.upload_method=Upload method
 
+# 32blit
+32BLIT.name=32blit
+
+32BLIT.build.vid=0x0483
+32BLIT.build.core=arduino
+32BLIT.build.board=32BLIT
+32BLIT.build.extra_flags=-D{build.product_line} {build.enable_usb} {build.xSerial}
+
+#32BLIT.menu.pnum.32BLIT=32blit
+32BLIT.node=NODE_H743ZI
+32BLIT.upload.maximum_size=131072
+32BLIT.upload.maximum_data_size=131072
+32BLIT.build.mcu=cortex-m7 -mfpu=fpv4-sp-d16 -mfloat-abi=hard
+32BLIT.build.board=32BLIT
+32BLIT.build.series=STM32H7xx
+32BLIT.build.product_line=STM32H750xx
+32BLIT.build.variant=32BLIT
+32BLIT.build.cmsis_lib_gcc=arm_cortexM7l_math
+
+32BLIT.menu.upload_method.MassStorage=Mass Storage
+32BLIT.menu.upload_method.MassStorage.upload.protocol=
+32BLIT.menu.upload_method.MassStorage.upload.tool=massStorageCopy
+
+
 ################################################################################
 # Nucleo 144 boards
 
